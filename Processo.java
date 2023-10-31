@@ -23,9 +23,10 @@ public class Processo extends Thread{
     public Processo(){
 
     }
-    public Processo(String nome, int numeroInteracoes){
+    public Processo(String nome, int numeroInteracoes, int prioridade){
         this.nome=nome;
         this.numeroInteracoes=numeroInteracoes;
+        this.prioridade=prioridade;
     }
     public void run(){
         for (int i = 0; i < numeroInteracoes; i++){
