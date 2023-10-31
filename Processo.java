@@ -1,6 +1,7 @@
 public class Processo extends Thread{
     private String nome;
     private int numeroInteracoes;
+    private int prioridade;
     public String getNome() {
         return nome;
     }
@@ -12,6 +13,12 @@ public class Processo extends Thread{
     }
     public void setNumeroInteracoes(int numeroInteracoes) {
         this.numeroInteracoes = numeroInteracoes;
+    }
+    public int getPrioridade() {
+        return prioridade;
+    }
+    public void setPrioridade(int prioridade) {
+        this.prioridade = prioridade;
     }
     public Processo(){
 
