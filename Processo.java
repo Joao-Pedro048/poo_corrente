@@ -23,7 +23,7 @@ public class Processo extends Thread{
     public void run(){
         for (int i = 0; i < numeroInteracoes; i++){
             System.out.println("Processo:" +nome+ ":"+i);
-            yield();
+           // yield();
         }
     }
     }
